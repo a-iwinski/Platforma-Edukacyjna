@@ -1,0 +1,36 @@
+US 1 :
+Jako Wykładowca chcę 
+utworzyć nowy kurs, 
+aby podzielić się materiałami z kursantami.
+
+Kryterium akceptacji: Kurs posiada unikalne ID, tytuł oraz opis i zostaje dodany do katalogu kursów z przypisaniem do wykładowcy.   
+
+US 2:
+Jako Wykładowca chcę 
+dodawać moduły do mojego kursu oraz lekcje do modułów, 
+aby materiały były logicznie uporządkowane.
+Kryterium akceptacji: Nowy moduł zostaje dopisany do wybranego kursu wykładowcy, a nowa lekcja zostaje przypisana do wskazanego modułu.   
+
+US 3:
+Jako Kursant chcę 
+przeglądać katalog kursów i wyszukiwać je po tytule, 
+aby znaleźć interesujące mnie szkolenie.
+Kryterium akceptacji: System wyświetla listę kursów pasujących do wpisanego fragmentu tytułu.  
+
+US 4:
+Jako Kursant chcę 
+zapisać się na wybrany kurs, 
+aby uzyskać dostęp do jego lekcji.
+Kryterium akceptacji: System tworzy dla kursanta obiekt Postęp powiązany z kursem; system blokuje ponowny zapis tego samego kursanta na ten sam kurs.   
+
+US 5:
+Jako Kursant chcę 
+przechodzić przez lekcje w kolejności i widzieć swój procentowy postęp, 
+aby systematycznie realizować materiał kursu.
+Kryterium akceptacji: System pozwala ukończyć lekcję w kolejnym module tylko wtedy, gdy poprzedni moduł został w pełni ukończony, a następnie aktualizuje procentowy postęp kursu.   
+
+US 6:
+Jako Kursant chcę 
+otrzymać certyfikat po ukończeniu wszystkich modułów kursu, 
+aby mieć potwierdzenie zdobytych kwalifikacji.
+Kryterium akceptacji: System sprawdza, czy postęp wynosi 100%,jeśli tak, zmienia flagę wydania certyfikatu i zwraca tekst imiennego certyfikatu; w przeciwnym razie odmawia jego wygenerowania. 
