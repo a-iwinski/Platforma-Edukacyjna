@@ -1,0 +1,43 @@
+1. Utwórz nowy kurs
+-Aktor: Wykładowca
+-Opis: Wykładowca podaje tytuł i opis kursu. System tworzy kurs z unikalnym ID, dodaje go do katalogu oraz przypisuje go do wykładowcy.
+-US 1
+
+2. Dodaj moduły i lekcje do kursu
+-Aktor: Wykładowca
+-Opis: Wykładowca dodaje moduł do swojego kursu oraz lekcję wraz z treścią do wskazanego modułu.
+-US 2
+
+3. Przeglądaj katalog kursów
+-Aktor: Kursant
+-Opis: Wyświetlana jest lista wszystkich dostępnych kursów.
+-Relacje: rozszerzany przez przypadek 4 (<<extend>>)
+-US 3
+
+4. Wyszukaj kurs po tytule
+-Aktor: Kursant
+-Opis: Zwracane są kursy pasujące do wpisanego tekstu.
+-Relacje: <<extend>> do przypadku 3
+-US 3
+
+5. Zapisz się na kurs
+-Aktor: Kursant
+-Opis: Kursant wybiera kurs i zapisuje się na niego. System tworzy obiekt Postęp powiązany z kursem i blokuje ponowny zapis tego samego kursanta na ten sam kurs.
+-US 4
+
+6. Ukończ lekcję
+-Aktor: Kursant
+-Opis: Lekcja zostaje zaznaczona jako ukończona (tylko jeśli poprzednie moduły są w pełni ukończone), a postęp jest aktualizowany.
+-Relacje: <<include>> przypadek 7
+-US 5
+
+7. Sprawdź postęp kursu
+-Aktor: Kursant
+-Opis: Kursant może wyświetlić swój procentowy postęp w danym kursie.
+-Relacje: włączany przez przypadek 6 (<<include>>)
+-US 5
+
+8. Pobierz certyfikat
+-Aktor: Kursant
+-Opis: Kursant po pełnym ukończeniu kursu (postęp 100%) może pobrać imienny certyfikat ukończenia, w przeciwnym razie system odrzuca prośbę.
+-US 6
