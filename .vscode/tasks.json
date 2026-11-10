@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Zbuduj",
+      "type": "shell",
+      "command": "g++ -std=c++17 -Wall main.cpp Kurs.cpp Kursant.cpp Modul.cpp PlatformaEdukacyjna.cpp Postep.cpp Wykladowca.cpp -o main.exe",
+      "options": { "cwd": "${fileDirname}" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Uruchom",
+      "type": "shell",
+      "command": ".\\main.exe",
+      "options": { "cwd": "${workspaceFolder}/kod" },
+      "dependsOn": "Zbuduj"
+    }
+  ]
+}
