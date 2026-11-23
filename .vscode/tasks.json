@@ -4,8 +4,8 @@
     {
       "label": "Zbuduj",
       "type": "shell",
-      "command": "g++ -std=c++17 -Wall main.cpp Kurs.cpp Kursant.cpp Modul.cpp PlatformaEdukacyjna.cpp Postep.cpp Wykladowca.cpp -o main.exe",
-      "options": { "cwd": "${fileDirname}" },
+      "command": "g++ -std=c++17 -Wall -Wextra main.cpp Uzytkownik.cpp Wykladowca.cpp Kursant.cpp Lekcja.cpp Modul.cpp Kurs.cpp Postep.cpp PlatformaEdukacyjna.cpp -o main.exe",
+      "options": { "cwd": "${workspaceFolder}/kod" },
       "group": { "kind": "build", "isDefault": true },
       "problemMatcher": ["$gcc"]
     },
