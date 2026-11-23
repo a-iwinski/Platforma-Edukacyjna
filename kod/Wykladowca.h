@@ -8,5 +8,7 @@ private:
     std::string specjalizacja;
 
 public:
-    std::string pobierzRole() override;
+    Wykladowca(int id, std::string imie, std::string nazwisko,
+               std::string tytulNaukowy, std::string specjalizacja);
+    std::string pobierzRole() const override;
 };

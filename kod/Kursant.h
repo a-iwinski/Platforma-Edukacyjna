@@ -10,6 +10,8 @@ private:
     std::vector<Postep> postepy;
 
 public:
-    std::string pobierzRole() override;
-    Postep znajdzPostep(int id_kursu);
+    Kursant(int id, std::string imie, std::string nazwisko, std::string dataRejestracji);
+    std::string pobierzRole() const override;
+    Postep* znajdzPostep(int id_kursu);
+    void dodajPostep(Postep p);
 };
