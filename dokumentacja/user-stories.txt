@@ -1,3 +1,9 @@
+OPIS SYSTEMU
+
+Platforma Edukacyjna to system do prowadzenia kursow online, w ktorym uczestnicza dwie role: Wykladowca i Kursant. Wykladowca tworzy kursy, dzieli je na moduly i uzupelnia lekcjami z trescia. Kursant przeglada katalog kursow, wyszukuje je po tytule i zapisuje sie na wybrany kurs, a system zaklada mu obiekt Postep powiazany z tym kursem. Lekcje przechodzi sie po kolei: kolejny modul odblokowuje sie dopiero po pelnym ukonczeniu poprzedniego, a system na biezaco liczy procentowy postep. Po ukonczeniu wszystkich modulow (100% postepu) kursant moze pobrac imienny certyfikat.
+
+USER STORIES
+
 US 1 :
 Jako Wykładowca chcę 
 utworzyć nowy kurs, 
